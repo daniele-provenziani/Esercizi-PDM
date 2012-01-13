@@ -1,2 +1,0 @@
-INDEX VERSION 1.126+/Users/danieleprovenziani/Desktop/Esercizi-PDM/.metadata/.plugins/org.eclipse.jdt.core
-757586593.index
