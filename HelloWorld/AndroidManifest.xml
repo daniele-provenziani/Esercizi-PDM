@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Questo documento viene creato automaticamente in fase di creazione del progetto android
+ è il file che definisce i contenuti e il comportamento della nostra applicazione, 
+ all'interno di questo file sono elencate le Activity e i Service dell'applicazione, 
+ con i permessi che necessita per funzionare correttamente -->
+ 
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.android.es0"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <!-- il documento ha come root l'elemento manifest ela  semantica è definita da
+    http://schemas.android.com/apk/res/android -->
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".HelloWorldActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <!-- l'elemento application descrive le caratteristiche della nostra app,si parte dall'attributo icon
+    a cui viene associato con un riferimento alla risorsa ic_laucher e rappresenta l'immagine del nostra
+    app visualizzata nel menù del dispositivo android e con il rispettivo nome associato con un riferimento alla 
+    chiave app_name di tipo string, inoltre contiene informazioni sulla activity e come viene gestita -->
+    
+    <!-- L'app può essere costituita da più schermate gestita dall'activity nel manifest abbiamo un omonimo elemento
+    con gli attributi.Il android:name ci indica che activity è gestita dalla classe .HelloWorldActivity,
+    e android:label mi indica il nome del label titolo dell'activity-->
+    
+    <!-- Il mondo i cui l'activity verrà visualizzata è dato dal'elemento intent-filter, mi indica che un componente,
+    in questo caso activity,dichiara che è in grado di soddisfare un intent.In questo caso la nostra activity è in 
+    grado di soddisfare l'intent corrispondende all'azione MAIN della categoria LAUNCHER.
+    Un'intent è la volontà di un componente di eseguire delle operazioni su un insieme di dati e quindi l'intent 
+    filter è quel componente che si prende il compito di gestire la chiamata dell'intent corrispondende -->
+  
+</manifest>

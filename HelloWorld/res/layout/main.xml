@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- La creazione di un nuovo progetto android comporta da parte di Eclipse l'instaurazione
+ di librerie e risorse che android ci mette a disposizione per gestire la creazione di un app,
+ la risorsa più importante per un'app android è il layout descritta dal documento main.xml 
+ questa risorsa ci permette di configurare l'activity con cui l'app andrà ad interfacciarsi con l'utente-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <!-- L'orientazione del linearlayout è impostata su vertical e posso occupare
+    tutto lo schermo sia in larghezza che in lunghezza (fill_parent) -->
+    
+    <TextView
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="@string/hello" />
+    
+    <!--  Un'activity può contenere componenti di sola visualizzazione e altri componenti che permettono
+    l'interazione con l'utente, queste interazioni sono gestite dalla classe View, in questo caso si ulizza
+    una TextView per far visualizzare un testo  -->
+    
+    <!--fill_parent del testo accupa tutta la schermata in orizzonatale e viceversa il wrap_content
+    circonda il testo in altezza -->
+    
+    <!--@string/hello indica che il testo visualizzato in TextView fa riferimento ad
+     una chiave di tipo string presente nella cartella res/values/strings.xml, e il 
+     suo valore può essere modificato in questo caso vale HELLOWORLD -->
+
+    
+</LinearLayout>
