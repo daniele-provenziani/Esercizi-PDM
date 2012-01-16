@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Activity Principale</string>
+    <string name="app_name">DueActivity</string>
+    <string name="hello1">Activity Secondaria</string>
+
+</resources>
