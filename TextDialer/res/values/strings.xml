@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">TextDialerActivity</string>
+    <string name="app_name">TextDialer</string>
+    <string name="rif">Chiama</string>
+    <string name="rif1">Digita</string>
+
+</resources>
